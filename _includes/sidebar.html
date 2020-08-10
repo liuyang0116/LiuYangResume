@@ -11,7 +11,14 @@
             <div class="contact-container container-block">
                 <ul class="list-unstyled contact-list">
                    
-                   {% if site.email %}
+                  
+                    {% if site.user %}
+                    <li class="user"><i class="fa fa-user-o"></i></li>
+                    {% else %}
+                    <li class="user"><i class="fa fa-user-o"></i>1985.01</li>
+                    {% endif %}
+                  
+                    {% if site.email %}
                     <li class="email"><i class="fa fa-envelope"></i><a href="mailto: {{site.email}}">{{site.email}}</a></li>
                     {% else %}
                     <li class="email"><i class="fa fa-envelope"></i><a href="mailto:alan.doe@website.com">yang.liu05261@gmail.com</a></li>
