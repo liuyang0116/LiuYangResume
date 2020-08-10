@@ -12,11 +12,10 @@
                 <ul class="list-unstyled contact-list">
                    
                   
-                    {% if site.user %}
-                    <li class="user"><i class="fa fa-user-o"></i></li>
+                    <li class="phone"><i class="fa fa-user-o"></i></li>
                     {% else %}
-                    <li class="user"><i class="fa fa-user-o"></i>1985.01</li>
-                    {% endif %}
+                    <li class="phone"><i class="fa fa-user-o"></i>1985.01</li>
+             
                   
                     {% if site.email %}
                     <li class="email"><i class="fa fa-envelope"></i><a href="mailto: {{site.email}}">{{site.email}}</a></li>
